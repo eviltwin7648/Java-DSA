@@ -1,17 +1,17 @@
 package Binary_Search;
 
-public class Ceiling {
+public class Floor {
     public static void main(String[] args) {
         int[] arr = {11, 23, 34, 55, 56, 87, 98, 111};
-        int target = 365;
+        int target = 2;
 
-        System.out.println(celing(arr, target));
+        System.out.println(floor(arr, target));
     }
 
-    static int celing(int[] arr, int target) {
+    static int floor(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
-        if(target > arr[end]){
+        if(target < arr[start]){
             return -1;
         }
 
@@ -42,6 +42,6 @@ public class Ceiling {
         }
 
 
-        return arr[start];
+        return arr[end];
     }
 }
