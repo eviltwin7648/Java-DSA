@@ -31,6 +31,9 @@ public class Floor {
 
                 }
             } else {
+
+            }
+            {
                 if (target > arr[mid]) {
 
                     end = mid - 1;
